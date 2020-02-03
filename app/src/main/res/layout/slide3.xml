@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:tint="@color/colorAccent"
+
+            android:layout_width="@dimen/img_width"
+            android:layout_height="@dimen/img_height"
+            android:src="@drawable/cht" />
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_slide3"
+            android:textColor="#0A108B"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+        <View            android:layout_marginTop="5dp"
+
+            android:background="@color/black"
+            android:layout_width="300dp"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="#012721"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/desc_slide3"
+            android:textAlignment="center"
+            android:textSize="@dimen/slide_desc" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

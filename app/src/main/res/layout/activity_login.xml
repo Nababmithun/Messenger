@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".activity.LoginActivity">
+
+
+
+    <TextView
+
+        android:textColor="@color/colorAccent"
+        android:textStyle="normal"
+        android:fontFamily="serif"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="49dp"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+   <!-- <EditText
+        android:id="@+id/login_email"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:fontFamily="serif"
+            android:textColor="#6C6A6A"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_email"
+            android:inputType="textWebEmailAddress"
+            android:hint=" Email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/emailicon"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+
+            android:fontFamily="serif"
+            android:textColor="#6C6A6A"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_password"
+            android:inputType="textPassword"
+            android:hint=" Password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:text="Forget Password?"
+        android:gravity="end"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"/>
+
+   <!-- <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+
+
+    <Button
+        android:textSize="17dp"
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_baground"
+        android:text="Login"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/white" />
+
+    <TextView
+
+        android:layout_gravity="center"
+        android:id="@+id/needNewAccount"
+        android:layout_width="wrap_content"
+        android:text="Need new Account?"
+        android:textColor="#012724"
+
+        android:layout_marginTop="7dp"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_using"
+        android:layout_width="wrap_content"
+        android:text="or Login using your"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"/>
+
+  <!--  <Button
+        android:id="@+id/phone_using"
+        android:layout_width="match_parent"
+        android:text="Phone"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"/>
+-->
+
+
+    <Button
+        android:textSize="17dp"
+
+        android:fontFamily="serif"
+        android:textAllCaps="false"
+        android:id="@+id/phone_using"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_baground"
+        android:text="Phone"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/white" />
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No internet"
+        android:id="@+id/ChatConnectionTV"/>
+</LinearLayout>

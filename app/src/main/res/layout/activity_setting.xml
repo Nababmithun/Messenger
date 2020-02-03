@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activity.SettingsActivity">
+
+    <include
+        android:id="@+id/setting_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+  <!--  <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+-->
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/button_baground"
+            android:layout_height="150dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfileImage"
+            android:layout_width="179dp"
+            android:layout_marginLeft="116dp"
+            android:layout_height="179dp"
+
+            android:layout_marginTop="95dp"
+            android:src="@drawable/detault_profile"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="#D80E52"/>
+
+      <!--  <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userProfileImage"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:fontFamily="serif"
+                android:textColor="#6C6A6A"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:inputType="textWebEmailAddress"
+                android:hint=" User Name"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+      <!--  <EditText
+            android:id="@+id/userStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="110dp"
+
+            android:layout_below="@id/userProfileImage"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+
+                android:fontFamily="serif"
+                android:textColor="#6C6A6A"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userStatus"
+                android:inputType="textWebEmailAddress"
+                android:hint=" User Status"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="177dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_below="@id/userProfileImage"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:fontFamily="serif"
+                android:textColor="#6C6A6A"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emaillll"
+                android:inputType="textWebEmailAddress"
+                android:hint="Email"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <!-- <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="219dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_below="@id/userProfileImage"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:fontFamily="serif"
+                android:textColor="#6C6A6A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneeeee"
+                android:inputType="number"
+                android:hint="Phone Number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+-->
+       <!-- <RadioGroup
+            android:layout_marginTop="279dp"
+
+            android:layout_below="@id/userProfileImage"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/genderRG"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:textColor="@color/dot_active"
+                android:id="@+id/maleRB"
+                android:onClick="selectedGenderRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                />
+            <RadioButton
+                android:textColor="@color/dark_green"
+                android:onClick="selectedGenderRB"
+                android:id="@+id/femaleRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>-->
+
+      <!--  <TextView
+
+            android:gravity="center"
+
+            android:layout_below="@id/userProfileImage"
+            android:layout_marginTop="190dp"
+            android:id="@+id/recheckGender"
+            android:layout_marginStart="5dp"
+            android:padding="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+
+
+
+
+        <!--   <Button
+               android:layout_marginTop="10dp"
+               android:id="@+id/updateAccountSettings"
+               android:layout_width="match_parent"
+               android:text="updateAccountSettings"
+               android:layout_height="wrap_content"/>-->
+
+
+
+
+        <Button
+            android:layout_marginTop="280dp"
+            android:layout_below="@id/userProfileImage"
+            android:textSize="17dp"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            android:id="@+id/updateAccountSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_baground"
+            android:text="update Profile"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+<!--
+</LinearLayout>-->

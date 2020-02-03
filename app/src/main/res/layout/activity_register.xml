@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+
+
+
+    <TextView
+
+        android:textColor="@color/colorAccent"
+        android:fontFamily="serif"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="43dp"
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--<EditText
+        android:id="@+id/registration_email"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/registration_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:fontFamily="serif"
+            android:textColor="#6C6A6A"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registration_email"
+            android:inputType="textWebEmailAddress"
+            android:hint=" Email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/emailicon"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:fontFamily="serif"
+            android:textColor="#6C6A6A"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registration_password"
+            android:inputType="textPassword"
+            android:hint=" Password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/registration_forgetPassword"
+        android:layout_width="match_parent"
+        android:text="Forget Password?"
+        android:gravity="end"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"/>
+
+   <!-- <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/registrationBtn"
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+-->
+
+
+    <Button
+        android:textSize="16dp"
+        android:fontFamily="serif"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:id="@+id/registrationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_baground"
+        android:text="Create Account"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/white" />
+    <TextView
+        android:textColor="#012724"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:id="@+id/alreadyHaveAnAccount"
+        android:layout_width="wrap_content"
+        android:text="All ready have an account?"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

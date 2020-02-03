@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A000000"
+    tools:context=".activity.ChatActivity">
+
+    <!--<include
+        android:id="@+id/chat_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/chat_toolbar"
+        android:id="@+id/private_messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_linear_layout"/>
+
+    <LinearLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_weight="4"
+            android:hint="type message here...."
+            android:padding="15dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/send_message_btn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>-->
+
+
+    <include
+        android:id="@+id/chat_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/private_messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_above="@+id/chat_linear_layout"
+        android:layout_marginBottom="6dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+   <!-- <RelativeLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:id="@+id/send_files_btn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_attach_file_black_24dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@android:color/white"
+            />
+
+
+        <EditText
+            android:fontFamily="serif"
+            android:id="@+id/input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type message here..."
+            android:padding="15dp"
+            android:maxLines="5"
+            android:layout_toEndOf="@+id/send_files_btn"
+            android:layout_toStartOf="@+id/send_message_btn"
+            />
+
+
+        <ImageButton
+            android:tint="@color/colorAccent"
+            android:id="@+id/send_message_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/white"
+            />
+
+    </RelativeLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:background="@drawable/broder"
+        >
+
+        <ImageButton
+            android:backgroundTint="@android:color/white"
+            android:id="@+id/send_files_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phto"
+            android:padding="5dp"/>
+
+        <EditText
+            android:fontFamily="serif"
+            android:id="@+id/input_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Your message..."
+            android:padding="10dp"/>
+
+        <ImageButton
+            android:backgroundTint="@android:color/white"
+            android:id="@+id/send_message_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

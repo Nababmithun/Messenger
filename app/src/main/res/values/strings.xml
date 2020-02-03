@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+   <!-- <string name="google_map_api">AIzaSyBJZkBTnmaklrHHWIweu&#45;&#45;ISmbdb4zJqis</string>
+    <string name="place_api_key">AIzaSyB9MxxJBmzLHdfsMEZSdV0vORR_MRwirPI</string>-->
+
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">START</string>
+    <string name="title_slide1">Friendship</string>
+    <string name="desc_slide1">you can find a large number of people to build up friendship</string>
+    <string name="title_slide2">Conversion</string>
+    <string name="desc_slide2">chatting is completely FREE of cost, no subscription fees.</string>
+    <string name="title_slide3">Chatting</string>
+    <string name="desc_slide3">fully one to one personal chatting system</string>
+    <string name="title_slide4">Secure</string>
+    <string name="desc_slide4">chatting keeps your messages secure</string>
+</resources>
